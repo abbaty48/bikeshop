@@ -24,12 +24,12 @@ export default function Alert() {
                     <p>Hello dear, my name is <em> Yusuf Abdulrahman a.k.a Abbatyya/Abbaty Abdul</em>, I'm a software engineering by profession, a problem solver, a thinker, and expert on IT industry.
                         please learn more about me </p>
                     <ul className="social-links">
-                        <li><a href="https://www.github.com/abbaty48">Github</a></li>
-                        <li><a href="https://www.linkedin.com/in/abbaty-abdul-93869bab/">LinkedIn</a></li>
-                        <li><a href="https://www.x.com/abbaty48">X - twitter</a></li>
-                        <li><a href="https://www.upwork.com/o/profiles/users/~01484d90f85bd4131a/">Upwork</a></li>
+                        <li><a href="https://www.github.com/abbaty48" target="_blank">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/abbaty-abdul-93869bab/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.x.com/abbaty48" target="_blank">X - twitter</a></li>
+                        <li><a href="https://www.upwork.com/o/profiles/users/~01484d90f85bd4131a/" target="_blank">Upwork</a></li>
                     </ul>
-                    <p className="warning">The project idea was originally taking from a psd mockup downloaded from somewhere on the internet, please check out the project repo on github for the mockup file('s) and the source code. <a href="https://github.com/abbaty48/bikeshop">Bikeshop</a></p>
+                    <p className="warning">The project idea was originally taking from a psd mockup downloaded from somewhere on the internet, please check out the project repo on github for the mockup file('s) and the source code. <a href="https://github.com/abbaty48/bikeshop" target="_blank">Bikeshop</a></p>
                 </div>
             </div>
         </div>
