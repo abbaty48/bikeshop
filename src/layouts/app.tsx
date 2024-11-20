@@ -7,12 +7,10 @@ import Features from '@sections/features/features'
 import UserFab from '@components/userFab'
 import Footer from '@sections/footer/footer'
 import Hero from '@sections/hero/hero'
-import Server from '@backend/server'
 import Alert from './alert'
 
 export default function App() {
     return (
-        <Server>
             <AuthProvider>
                 <QueryClientProvider client={new QueryClient()}>
                     <FragmentLinkProvider>
@@ -30,6 +28,5 @@ export default function App() {
                     </FragmentLinkProvider>
                 </QueryClientProvider>
             </AuthProvider>
-        </Server>
     )
 }
