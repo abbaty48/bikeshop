@@ -1,14 +1,12 @@
-import { useIntersectionObserver } from '@hooks/useIntersectionObserver'
 import THUMB1 from '@assets/images/IMG_BIKE02_THUMB1.avif'
 import THUMB2 from '@assets/images/IMG_BIKE02_THUMB2.avif'
 import THUMB3 from '@assets/images/IMG_BIKE02_THUMB3.avif'
 import ImageMagnifier from '@components/imageZoom/zoom'
 import IMG2 from '@assets/images/IMG_BIKE02.avif'
-import { useRef } from 'react'
+import { useInView } from '@react-spring/web'
 
 export default function Showcase() {
-    const ref1 = useRef<HTMLElement | null>(null)
-    const isIntersected = useIntersectionObserver(ref1)
+    const [sectionRef, isIntersected] = useInView()
 
     return (
         <section className={'py-20 space-y-20'} aria-labelledby="h3-showcase">
@@ -19,7 +17,7 @@ export default function Showcase() {
                 <p className={'text-[1.8rem] font-light text-c3 text-center md:w-3/4 mx-auto font-oldStandardTT'}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
                     aliquip ex ea commodo consequat.</p>
             </div>
-            <section ref={ref1} aria-hidden></section>
+            <section ref={sectionRef} aria-hidden></section>
             {
                 isIntersected && (
                     <ImageMagnifier maxInDepthZoomScale={0.5}
