@@ -29,7 +29,7 @@ export default function Alert() {
                         <li><a href="https://www.x.com/abbaty48">X - twitter</a></li>
                         <li><a href="https://www.upwork.com/o/profiles/users/~01484d90f85bd4131a/">Upwork</a></li>
                     </ul>
-                    <p className="warning">The project idea was originally taking from a psd mockup downloaded from somewhere on the internet, please check out the project repo on github for the mockup file('s) and the source code.</p>
+                    <p className="warning">The project idea was originally taking from a psd mockup downloaded from somewhere on the internet, please check out the project repo on github for the mockup file('s) and the source code. <a href="https://github.com/abbaty48/bikeshop">Bikeshop</a></p>
                 </div>
             </div>
         </div>
