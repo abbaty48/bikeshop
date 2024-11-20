@@ -1,12 +1,11 @@
 import { useFragmentLink } from "@components/fragmentLink/useFragmentLink";
-import { useIntersectionObserver } from "@hooks/useIntersectionObserver";
+import { useInView } from "@react-spring/web";
 import View from "@sections/products/view";
-import { useMemo, useRef } from "react";
+import { useMemo } from "react";
 
 export default function Products() {
     const { params } = useFragmentLink()
-    const ref1 = useRef<HTMLElement | null>(null)
-    const isIntersected = useIntersectionObserver(ref1, { threshold: 0.25 })
+    const [ref, isIntersected] = useInView()
 
     const Fragment = useMemo(() => {
         return params?.['type'] === 'bikes' ? <View kind="bikes" header="Cycles" /> :
@@ -14,7 +13,7 @@ export default function Products() {
     }, [params])
 
     return (
-        <article id={'products'} ref={ref1} className="h-fit">
+        <article id={'products'} ref={ref} className="h-fit">
             {isIntersected && Fragment}
         </article>
     )
